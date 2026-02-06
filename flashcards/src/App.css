@@ -1,0 +1,49 @@
+.App {
+  text-align: center;
+}
+
+.flashcard {
+  width: 350px;
+  height: 300px;
+  margin: 40px auto;
+  padding: 20px;
+  border-radius: 15px;
+  cursor: pointer;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.flashcard:hover {
+  transform: scale(1.05);
+}
+
+.flashcard img {
+  max-width: 150px;
+  margin-top: 15px;
+}
+
+.flashcard.easy {
+  background-color: #2e7d32;
+}
+
+.flashcard.medium {
+  background-color: #f9a825;
+}
+
+.flashcard.hard {
+  background-color: #c62828;
+}
+
+.flashcard.flipped {
+  outline: 3px solid rgba(255, 255, 255, 0.6);
+}
+
+button {
+  margin-top: 20px;
+}
